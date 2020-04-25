@@ -1,6 +1,9 @@
 def resolve():
     a, b = map(int, input().split())
-    print(a + b if b % a == 0 else b - a)
+    if a < 10 and b < 10:
+        print(a * b)
+    else:
+        print(-1)
 
 
 if __name__ == "__main__":

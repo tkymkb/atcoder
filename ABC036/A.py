@@ -1,6 +1,9 @@
+import math
+
+
 def resolve():
     a, b = map(int, input().split())
-    print(a + b if b % a == 0 else b - a)
+    print(math.ceil(b / a))
 
 
 if __name__ == "__main__":
